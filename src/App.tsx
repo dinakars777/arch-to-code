@@ -210,7 +210,17 @@ function ArchitectureBuilder() {
     <div className="app-container">
       {/* Sidebar Library */}
       <aside className="sidebar">
-        <h2><Hammer size={18} style={{ display:'inline', marginRight: 8}}/> Library</h2>
+        <div className="sidebar-header">
+          <h2><Hammer size={18} style={{ display:'inline', marginRight: 8}}/> arch-to-code</h2>
+          <a 
+            href="https://github.com/dinakars777/arch-to-code" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="star-button"
+          >
+            ⭐ Star
+          </a>
+        </div>
         <p style={{fontSize: '0.8rem', color: '#ccc'}}>Drag blocks into the workspace</p>
         
         {components.map((c) => (
