@@ -10,25 +10,27 @@
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vitejs.dev)
 [![Status](https://img.shields.io/badge/Status-Beta-brightgreen.svg)]()
 
-`arch-to-code` is a client-side web application that lets you visually drag-and-drop cloud architecture components onto an interactive canvas. Once connected, an LLM (OpenAI) instantly compiles your visual graph into production-ready HashiCorp Terraform (`main.tf`) code.
+Drag cloud architecture components onto a canvas. Connect them. Click generate. Get Terraform code.
 
-Built with React, Vite, React Flow (`@xyflow/react`), and the [`@dinakars777/react-glass-ui`](https://github.com/dinakars777/react-glass-ui) design system.
+Client-side only. Your OpenAI key stays in your browser.
+
+Built with React, Vite, React Flow, and [`@dinakars777/react-glass-ui`](https://github.com/dinakars777/react-glass-ui).
 
 ---
 
 ## Why?
 
-Writing Terraform, AWS CDK, or Kubernetes YAML by hand is tedious and error-prone. `arch-to-code` bridges the gap between high-level architecture diagrams and DevOps execution — what you draw is exactly what gets deployed.
+Writing Terraform by hand is slow. Diagrams are faster but don't deploy. This tool does both — what you draw becomes what you deploy.
 
 ---
 
 ## Features
 
-- **Interactive Canvas** — Drag and drop AWS nodes: EC2, S3, RDS, Lambda, VPC, IAM, and more
-- **Smart Routing** — Connect nodes to define dependencies, security group rules, and network topology
-- **AI Terraform Generation** — Click "Generate Terraform" to compile your diagram into valid HCL instantly
-- **Secure by Design** — Your OpenAI API key lives only in browser local state, never sent to an intermediate server
-- **Glassmorphism UI** — Fluid, animated interface built with pure CSS glassmorphism
+- **Interactive Canvas** — Drag AWS nodes: EC2, S3, RDS, Lambda, VPC, IAM
+- **Smart Routing** — Connect nodes to define dependencies and network topology
+- **AI Terraform Generation** — Click generate, get valid HCL
+- **Secure** — Your OpenAI key stays in browser local storage, never leaves your machine
+- **Glassmorphism UI** — Fluid, animated interface
 
 ---
 
